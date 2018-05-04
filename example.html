@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Example</title>
+	</head>
+	<body>
+		Example 1: <span class="timecounter" start_interval="355" reverse="1" tip="2"></span>
+		<br>Example 2: <span class="timecounter" tip="2" start_interval="555"></span>
+		<br>Example 3: <span id="paused_timer" class="timecounter" start_interval="30"></span>
+		<br><button id="paused_btn" type="button" onclick="$('#paused_timer').timecounter('pause');$('#paused_btn').hide();$('#resume_btn').show();">Pause</button>
+		<button id="resume_btn" style="display: none;" type="button" onclick="$('#paused_timer').timecounter('resume');$('#paused_btn').show();$('#resume_btn').hide();">Resume</button>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="jquery.timecounter.min.js"></script>
+		<script>
+			$('.timecounter').timecounter();
+		</script>
+	</body>
+</html>
